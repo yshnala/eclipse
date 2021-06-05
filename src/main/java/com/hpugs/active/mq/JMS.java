@@ -168,6 +168,7 @@ public class JMS {
 			messageConsumer = session.createConsumer(destination);
 			MsgListener msgListener = new MsgListener(queryName);
 			messageConsumer.setMessageListener(msgListener);
+			System.out.println("prod");
 			while(true){
 				Thread.sleep(10000);
 			}
